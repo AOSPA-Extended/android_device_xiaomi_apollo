@@ -35,6 +35,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.fingerprintextension@1.0.vendor
 
+# IFAA manager
+PRODUCT_PACKAGES += \
+    org.ifaa.android.manager
+
 # Init
 PRODUCT_PACKAGES += \
     fstab.qcom \
