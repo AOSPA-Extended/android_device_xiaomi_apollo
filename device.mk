@@ -24,6 +24,10 @@ PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/bluetooth_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_audio_policy_configuration.xml \
     vendor/qcom/opensource/audio-hal/primary-hal/configs/common/bluetooth_qti_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_qti_audio_policy_configuration.xml
 
+# Camera
+PRODUCT_PACKAGES += \
+    CutoutRingServiceApollo
+
 # Fingerprint
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1-service.apollo
@@ -40,3 +44,11 @@ PRODUCT_PACKAGES += \
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.light-service.xiaomi
+
+# Overlays
+PRODUCT_PACKAGES += \
+    AOSPAApolloFrameworks \
+    AOSPAApolloSettings \
+    AOSPAApolloSystemUI \
+    ApolloFrameworks \
+    ApolloSystemUI
