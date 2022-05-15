@@ -34,6 +34,9 @@ TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_apollo
 # Kernel
 KERNEL_DEFCONFIG := apollo_defconfig
 
+# Platform
+BOARD_VENDOR := xiaomi
+
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/init/etc/fstab.qcom
 
