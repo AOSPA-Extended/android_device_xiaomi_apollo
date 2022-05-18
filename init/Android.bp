@@ -25,3 +25,32 @@ cc_library_static {
         "system/core/init"
     ]
 }
+
+// fstab
+soong_config_module_type {
+    name: "xiaomi_kona_rootdir_prebuilt_etc",
+    module_type: "prebuilt_etc",
+    config_namespace: "XIAOMI_KONA_ROOTDIR",
+    variables: ["PARTITION_SCHEME"],
+    properties: ["src"],
+}
+
+soong_config_string_variable {
+    name: "PARTITION_SCHEME",
+    values: ["a", "vab"],
+}
+
+xiaomi_kona_rootdir_prebuilt_etc {
+    name: "fstab.qcom",
+    soong_config_variables: {
+        PARTITION_SCHEME: {
+            a: {
+                src: "etc/fstab.qcom",
+            },
+            conditions_default: {
+                src: "etc/fstab.qcom",
+            },
+        },
+    },
+    vendor: true,
+}
