@@ -25,3 +25,6 @@ BUILD_BROKEN_VENDOR_PROPERTY_NAMESPACE := true
 
 # Init
 TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_apollo
+
+# Kernel
+KERNEL_DEFCONFIG := apollo_defconfig
