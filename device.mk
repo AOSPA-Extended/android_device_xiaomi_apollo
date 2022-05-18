@@ -61,3 +61,10 @@ PRODUCT_PACKAGES += \
     AOSPAApolloSystemUI \
     ApolloFrameworks \
     ApolloSystemUI
+
+# WLAN
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/wlan/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf
+
+PRODUCT_CFI_INCLUDE_PATHS += \
+    hardware/qcom/wlan/qcwcn/wpa_supplicant_8_lib
