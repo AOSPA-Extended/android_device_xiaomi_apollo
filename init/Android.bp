@@ -54,3 +54,10 @@ xiaomi_kona_rootdir_prebuilt_etc {
     },
     vendor: true,
 }
+
+prebuilt_etc {	
+    name: "init.apollo.rc",	
+    src: "etc/init.apollo.rc",	
+    sub_dir: "init",	
+    vendor: true,	
+}

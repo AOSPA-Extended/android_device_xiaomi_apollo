@@ -14,3 +14,9 @@
 
 # Inherit from sm8250-common
 $(call inherit-product, device/xiaomi/sm8250-common/kona.mk)
+
+# Init
+PRODUCT_PACKAGES += \
+    fstab.qcom \
+    fstab.qcom_ramdisk \
+    init.apollo.rc
