@@ -22,6 +22,9 @@ AUDIO_FEATURE_ENABLED_SSR := false
 # Board Info
 TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
 
+# Display
+TARGET_USES_VULKAN := true
+
 # Gestures
 TARGET_TAP_TO_WAKE_NODE := "/sys/touchpanel/double_tap"
 
