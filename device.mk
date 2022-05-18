@@ -20,3 +20,6 @@ PRODUCT_PACKAGES += \
     fstab.qcom \
     fstab.qcom_ramdisk \
     init.apollo.rc
+# Lights
+PRODUCT_PACKAGES += \
+    android.hardware.light-service.xiaomi
