@@ -16,3 +16,6 @@ DEVICE_PATH := device/xiaomi/apollo
 
 # Board Info
 TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
+
+# Gestures
+TARGET_TAP_TO_WAKE_NODE := "/sys/touchpanel/double_tap"
