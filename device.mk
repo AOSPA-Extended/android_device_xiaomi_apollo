@@ -68,3 +68,6 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_CFI_INCLUDE_PATHS += \
     hardware/qcom/wlan/qcwcn/wpa_supplicant_8_lib
+
+# Inherit the proprietary files
+$(call inherit-product, vendor/xiaomi/apollo/apollo-vendor.mk)

@@ -14,6 +14,8 @@
 
 DEVICE_PATH := device/xiaomi/apollo
 
+-include device/xiaomi/sm8250-common/BoardConfigCommon.mk
+
 # Audio
 AUDIO_FEATURE_ENABLED_DLKM := true
 AUDIO_FEATURE_ENABLED_DYNAMIC_LOG := false
@@ -63,3 +65,6 @@ SELINUX_IGNORE_NEVERALLOWS := true
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
 SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/public
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
+
+# Inherit the proprietary files
+include vendor/xiaomi/apollo/BoardConfigVendor.mk
